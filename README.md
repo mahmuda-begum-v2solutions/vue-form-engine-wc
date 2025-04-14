@@ -2,7 +2,7 @@
 
 ## 🛠️ Locally Using This Web Component
 
-If you'd like to test or develop this Web Component locally using a separate Vue project (e.g., `vue-form-engine-demo`), follow these steps:
+If you'd like to test or develop this Web Component locally using a separate Vue project (e.g., `vue-form-engine-demo-local`), follow these steps:
 
 ---
 
@@ -12,7 +12,7 @@ If you'd like to test or develop this Web Component locally using a separate Vue
 
 # Web Component project (this repo)
 
-└── vue-form-engine-demo/
+└── vue-form-engine-demo-local/
 
 # Vue app to consume the component locally
 
@@ -34,7 +34,7 @@ Build the Web Component in webcomponent mode
 
 ### 📦 Copy the Built Component into the Demo Project
 
-To copy the built file into your local consumer app (vue-form-engine-demo), run:
+To copy the built file into your local consumer app (vue-form-engine-demo-local), run:
 
 ```bash
 npm run clean-create-copy-wc
@@ -50,7 +50,7 @@ Copy the new component files from dist/ into it
 
 ### 🔗 Use the Web Component in Your Vue Demo App
 
-In your vue-form-engine-demo, import and use the component like this:
+In your vue-form-engine-demo-local, import and use the component like this:
 
 public/index.html
 

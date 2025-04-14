@@ -23,3 +23,6 @@
 //npm install vue-form-engine-wc
 //Then import it via <script type="module" src="/node_modules/vue-form-engine-wc/dist/my-web-components.js"></script> in index.html.
 //Or copy to public/web-components/ like before, if you're using manual control.
+
+//vue-form-engine-wc@1.0.0
+//https://github.com/mahmuda-begum-v2solutions/vue-form-engine-wc/tags
