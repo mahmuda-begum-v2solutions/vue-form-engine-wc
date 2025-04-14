@@ -1,8 +1,9 @@
 {
   "name": "vue-form-engine-wc",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
+  "description": "Vue 3 Web Component for form engine",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -51,5 +52,18 @@
     "vite-plugin-vue-devtools": "^7.7.2",
     "vitest": "^3.1.1",
     "vue-tsc": "^2.2.8"
-  }
+  },
+  "main": "dist/my-web-components.js",
+  "module": "dist/my-web-components.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vue",
+    "web-components",
+    "form",
+    "form-engine"
+  ],
+  "author": "Mahmuda Begum",
+  "license": "MIT"
 }
