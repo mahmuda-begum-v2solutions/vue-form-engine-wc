@@ -38,3 +38,12 @@
 // 🧩 Structured: textarea, select, multiSelect, radio, checkbox, toggle, switch (alias of toggle)
 
 // 🛠️ Utility: link, helpText, error, ariaLabel, ariaDescribedBy, readonly, disabled, etc
+
+// vue-form-engine-wc@1.0.3
+
+//steps
+// git add package.json
+// git commit -m "Bump version to 1.0.3"
+//git tag v1.0.3
+//git push origin main --tags
+//npm publish --access public
