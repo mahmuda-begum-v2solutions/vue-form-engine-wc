@@ -1,21 +1,25 @@
 <script setup lang="ts">
 import { reactive, computed, ref } from 'vue'
-import FieldInput from '@/components/form-engine/FieldInput.vue'
-import FieldTextarea from '@/components/form-engine/FieldTextarea.vue'
-import FieldSelect from '@/components/form-engine/FieldSelect.vue'
-import FieldCheckbox from '@/components/form-engine/FieldCheckbox.vue'
-import FieldToggle from '@/components/form-engine/FieldToggle.vue'
-import FieldFile from '@/components/form-engine/FieldFile.vue'
-import FieldLink from '@/components/form-engine/FieldLink.vue'
-import FieldRadio from '@/components/form-engine/FieldRadio.vue'
-import FieldAsyncSelect from '@/components/form-engine/FieldAsyncSelect.vue'
-import FieldCustom from '@/components/form-engine/FieldCustom.vue'
+import FieldInput from '@/components/form-engine-ce/FieldInput.ce.vue'
+import FieldTextarea from '@/components/form-engine-ce/FieldTextarea.ce.vue'
+import FieldSelect from '@/components/form-engine-ce/FieldSelect.ce.vue'
+import FieldCheckbox from '@/components/form-engine-ce/FieldCheckbox.ce.vue'
+import FieldToggle from '@/components/form-engine-ce/FieldToggle.ce.vue'
+import FieldFile from '@/components/form-engine-ce/FieldFile.ce.vue'
+import FieldLink from '@/components/form-engine-ce/FieldLink.ce.vue'
+import FieldRadio from '@/components/form-engine-ce/FieldRadio.ce.vue'
+import FieldAsyncSelect from '@/components/form-engine-ce/FieldAsyncSelect.ce.vue'
+import FieldCustom from '@/components/form-engine-ce/FieldCustom.ce.vue'
 
-import FormPageHeader from '@/components/form-engine/FormPageHeader.vue'
-import FormSectionHeader from '@/components/form-engine/FormSectionHeader.vue'
-import FormActions from '@/components/form-engine/FormActions.vue'
+import FormPageHeader from '@/components/form-engine-ce/FormPageHeader.ce.vue'
+import FormSectionHeader from '@/components/form-engine-ce/FormSectionHeader.ce.vue'
+import FormActions from '@/components/form-engine-ce/FormActions.ce.vue'
 
-import type { OuterHeadingBlock, Field, FormHeadingBlock, ButtonBlock, FieldComponent, FieldGrid, FieldBase, ValidationRule } from '@/types/formTypes.ts'
+import type { OuterHeadingBlock, Field, FormHeadingBlock, ButtonBlock, FieldComponent, FieldGrid, FieldBase, ValidationRule } from '@/types/formTypes.ce.ts'
+
+defineOptions({
+  shadow: true
+})
 
 // Props
 const props = defineProps<{
@@ -229,7 +233,7 @@ const handleReset = () => {
 
   // Optionally, reset any other states or variables related to the form
   isPreviewVisible.value = false // Hide preview on reset
-  previewData.value = {} // Explicitly clear preview data (if needed)
+  //previewData.value = {} // Explicitly clear preview data (if needed)
 
   console.log('Form has been reset.')
 }
@@ -390,30 +394,22 @@ function clearError(fieldName: string) {
 
 /* Responsive breakpoints */
 @media (max-width: 320px) {
+  html {
+    font-size: 87.5%;
+    /* 14px base */
+  }
+
+  body {
+    padding: 0.5rem;
+    /* Reduce padding on small screens */
+  }
+
   .grid {
     display: block;
   }
 
   .grid>* {
     margin-bottom: 1rem;
-  }
-
-  .form-engine {
-    padding: 0.5rem;
-    gap: 0.75rem;
-  }
-
-  .field-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .modal-content {
-    padding: 1rem;
-    font-size: 0.75rem;
-  }
-
-  .modal-content h3 {
-    font-size: 1rem;
   }
 }
 

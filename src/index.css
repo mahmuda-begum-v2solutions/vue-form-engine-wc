@@ -1,1 +1,76 @@
-@import 'tailwindcss';
+html {
+  font-size: 100%; /* 1rem = 16px */
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem; /* 16px base */
+  line-height: 1.5;
+  background-color: #fff;
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+  padding: 1rem;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111;
+    color: #fff;
+  }
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Dark Mode for color input */
+@media (prefers-color-scheme: dark) {
+}
+
+/* Mobile responsiveness */
+@media (max-width: 320px) {
+  html {
+    font-size: 87.5%; /* 14px base */
+  }
+
+  body {
+    padding: 0.5rem; /* Reduce padding on small screens */
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .grid > * {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (min-width: 769px) {
+  html {
+    font-size: 100%;
+  }
+}

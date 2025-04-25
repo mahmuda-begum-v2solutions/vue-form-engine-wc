@@ -1,10 +1,10 @@
 import { defineCustomElement } from 'vue'
-import MyButton from '@/components/button/BaseButton.ce.vue'
+import FormEngine from '@/components/form-engine-ce/FormEngine.ce.vue'
 
 // Register your custom element(s)
-const MyButtonElement = defineCustomElement(MyButton)
+const FormEngineElement = defineCustomElement(FormEngine)
 
-customElements.define('base-button', MyButtonElement)
+customElements.define('form-engine', FormEngineElement)
 
 // Add more custom elements like this:
 // const AnotherElement = defineCustomElement(AnotherComponent)

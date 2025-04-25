@@ -1,0 +1,296 @@
+[
+  {
+    "grid": true,
+    "children": [
+      {
+        "name": "firstName",
+        "label": "First Name",
+        "component": "input",
+        "props": {
+          "type": "text",
+          "required": true,
+          "placeholder": "John",
+          "maxlength": 50
+        },
+        "validation": {
+          "required": true,
+          "pattern": "^[a-zA-Z]+$",
+          "customMessage": "Please enter a valid first name (letters only)."
+        }
+      },
+      {
+        "name": "lastName",
+        "label": "Last Name",
+        "component": "input",
+        "props": {
+          "type": "text",
+          "required": true,
+          "placeholder": "Doe",
+          "maxlength": 50
+        },
+        "validation": {
+          "required": true,
+          "pattern": "^[a-zA-Z]+$",
+          "customMessage": "Please enter a valid last name (letters only)."
+        }
+      }
+    ]
+  },
+  {
+    "name": "email",
+    "label": "Email Address",
+    "component": "input",
+    "props": {
+      "type": "email",
+      "required": true,
+      "placeholder": "example@abc.com",
+      "maxlength": 255,
+      "autocomplete": "email",
+      "ariaLabel": "Email address"
+    },
+    "validation": {
+      "required": true,
+      "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+      "customMessage": "Please enter a valid email address."
+    }
+  },
+  {
+    "name": "phoneNumber",
+    "label": "Phone Number",
+    "component": "input",
+    "props": {
+      "type": "tel",
+      "required": true,
+      "placeholder": "(+91)XXXXXXXXXX",
+      "maxlength": 15
+    },
+    "validation": {
+      "required": true,
+      "pattern": "^\\+91[0-9]{10}$|^[0-9]{10}$",
+      "customMessage": "Please enter a valid Indian phone number."
+    }
+  },
+  {
+    "name": "birthdate",
+    "label": "Date of Birth",
+    "component": "input",
+    "props": {
+      "type": "date",
+      "required": true
+    },
+    "validation": {
+      "required": true,
+      "min": "1900-01-01",
+      "max": "2005-01-01",
+      "customMessage": "Please enter your birthdate (you must be at least 18 years old)."
+    }
+  },
+  {
+    "name": "favoriteColor",
+    "label": "Favorite Color",
+    "component": "input",
+    "props": {
+      "type": "color",
+      "value": "#ff0000",
+      "required": true
+    }
+  },
+  {
+    "name": "profilePicture",
+    "label": "Profile Picture",
+    "component": "input",
+    "props": {
+      "type": "file",
+      "accept": "image/*",
+      "required": true
+    },
+    "validation": {
+      "maxSize": 5,
+      "customMessage": "Please upload a profile picture smaller than 5MB."
+    }
+  },
+  {
+    "name": "resumeUpload",
+    "label": "Resume Upload",
+    "component": "input",
+    "props": {
+      "type": "file",
+      "accept": ".pdf,.doc,.docx",
+      "required": true
+    },
+    "validation": {
+      "maxSize": 10,
+      "customMessage": "Please upload a resume smaller than 10MB."
+    }
+  },
+  {
+    "name": "country",
+    "label": "Country",
+    "component": "select",
+    "props": {
+      "required": true
+    },
+    "options": ["United States", "Canada", "Germany", "France", "United Kingdom", "India"]
+  },
+  {
+    "name": "languagesKnown",
+    "label": "Languages Known",
+    "component": "select",
+    "props": {
+      "required": true,
+      "multiple": true
+    },
+    "options": [
+      { "value": "en", "label": "English" },
+      { "value": "fr", "label": "French" },
+      { "value": "de", "label": "German" },
+      { "value": "es", "label": "Spanish" },
+      { "value": "hi", "label": "Hindi" }
+    ]
+  },
+  {
+    "name": "gender",
+    "label": "Gender",
+    "component": "radio",
+    "props": {
+      "required": true
+    },
+    "options": [
+      { "label": "Male", "value": "male" },
+      { "label": "Female", "value": "female" },
+      { "label": "Other", "value": "other" }
+    ]
+  },
+  {
+    "name": "interests",
+    "label": "Interests",
+    "component": "checkbox",
+    "props": {
+      "required": false
+    },
+    "options": ["Sports", "Music", "Movies", "Traveling"]
+  },
+  {
+    "name": "newsletterSubscription",
+    "label": "Newsletter Subscription",
+    "component": "radio",
+    "props": {
+      "required": true
+    },
+    "options": [
+      { "label": "Subscribe", "value": "subscribe" },
+      { "label": "Unsubscribe", "value": "unsubscribe" }
+    ]
+  },
+  {
+    "name": "satisfactionLevel",
+    "label": "Satisfaction Level",
+    "component": "range",
+    "props": {
+      "min": 1,
+      "max": 10,
+      "required": true
+    }
+  },
+  {
+    "name": "termsConditions",
+    "label": "Accept Terms and Conditions",
+    "component": "checkbox",
+    "props": {
+      "required": true
+    }
+  },
+  {
+    "name": "contactTime",
+    "label": "Preferred Contact Time",
+    "component": "time",
+    "props": {
+      "required": false
+    }
+  },
+  {
+    "name": "additionalInstructions",
+    "label": "Additional Instructions",
+    "component": "textarea",
+    "props": {
+      "placeholder": "Any additional information or instructions",
+      "rows": 4
+    },
+    "validation": {
+      "maxlength": 500,
+      "customMessage": "Please limit your additional instructions to 500 characters."
+    }
+  },
+  {
+    "name": "matchInfo",
+    "label": "Match Personal Information1",
+    "component": "toggle",
+    "props": {
+      "required": true,
+      "id": "matchInfoToggle",
+      "name": "matchInfo",
+      "error": false,
+      "errorMessage": "You must confirm matching info",
+      "helpText": "Enable this if your information matches your government ID"
+    }
+  },
+  {
+    "name": "linkHelp",
+    "label": "Help Link",
+    "component": "link",
+    "props": {
+      "href": "https://help.example.com",
+      "text": "Click here for help",
+      "external": true
+    }
+  },
+  {
+    "name": "companySelect",
+    "label": "Select Companies",
+    "component": "asyncSelect",
+    "props": {
+      "name": "company",
+      "id": "company-select",
+      "optionsUrl": "https://jsonplaceholder.typicode.com/users",
+      "disabled": false,
+      "readonly": false,
+      "error": false,
+      "errorMessage": "Please select a valid company",
+      "ariaLabel": "Company selection dropdown",
+      "ariaDescribedBy": "company-help"
+    },
+    "helpText": "Choose your company from the list."
+  },
+  {
+    "name": "fullName",
+    "label": "Full Name",
+    "component": "custom",
+    "type": "text",
+    "placeholder": "Enter your full name",
+    "helpText": "As it appears on official documents"
+  },
+  {
+    "name": "feedbackType",
+    "label": "Feedback Type",
+    "component": "custom",
+    "type": "select",
+    "options": [
+      { "label": "Bug Report", "value": "bug" },
+      { "label": "Feature Request", "value": "feature" },
+      { "label": "General Feedback", "value": "general" }
+    ],
+    "helpText": "Tell us what kind of feedback you're submitting"
+  },
+  {
+    "name": "feedbackMessage",
+    "label": "Message",
+    "component": "custom",
+    "type": "textarea",
+    "placeholder": "Write your feedback here...",
+    "helpText": "Max 500 characters",
+    "validation": {
+      "maxlength": 500,
+      "customMessage": "Please limit your feedback to 500 characters."
+    }
+  }
+]

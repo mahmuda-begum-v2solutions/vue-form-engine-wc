@@ -24,5 +24,17 @@
 //Then import it via <script type="module" src="/node_modules/vue-form-engine-wc/dist/my-web-components.js"></script> in index.html.
 //Or copy to public/web-components/ like before, if you're using manual control.
 
-//vue-form-engine-wc@1.0.0
+//vue-form-engine-wc@1.0.2
 //https://github.com/mahmuda-begum-v2solutions/vue-form-engine-wc/tags
+
+// Here’s your fully upgraded ultimate JSON schema — ✅ now covering all possible field types across:
+
+// 🧾 Basic Inputs: text, email, password, number, tel, url
+
+// 🗓️ Date & Time: date, time, datetime-local, month, week
+
+// 🎨 Visual: color, range, file, imageUpload (via file with accept="image/*")
+
+// 🧩 Structured: textarea, select, multiSelect, radio, checkbox, toggle, switch (alias of toggle)
+
+// 🛠️ Utility: link, helpText, error, ariaLabel, ariaDescribedBy, readonly, disabled, etc

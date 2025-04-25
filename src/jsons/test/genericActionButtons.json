@@ -1,0 +1,38 @@
+{
+  "buttons": [
+    {
+      "type": "submit",
+      "text": "Submit",
+      "icon": "fas fa-check-circle",
+      "class": "",
+      "disabled": false,
+      "loading": false,
+      "actionId": "submitForm"
+    },
+    {
+      "type": "reset",
+      "text": "Reset",
+      "icon": "fas fa-undo",
+      "class": "",
+      "disabled": false,
+      "loading": false,
+      "actionId": "resetForm"
+    },
+    {
+      "type": "button",
+      "text": "Preview",
+      "icon": "fas fa-eye",
+      "class": "",
+      "disabled": false,
+      "loading": false,
+      "actionId": "previewForm"
+    }
+  ],
+  "link": {
+    "text": "Learn more",
+    "href": "https://example.com/about",
+    "class": "",
+    "icon": "fas fa-info-circle",
+    "external": true
+  }
+}

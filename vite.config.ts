@@ -3,7 +3,6 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
-import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig(({ mode }) => {
   const isWebComponentBuild = mode === 'webcomponent'
@@ -18,7 +17,6 @@ export default defineConfig(({ mode }) => {
         },
       }),
       vueDevTools(),
-      tailwindcss(),
     ],
     resolve: {
       alias: {

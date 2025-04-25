@@ -1,0 +1,17 @@
+{
+  "type": "heading-block",
+  "wrapperClass": "",
+  "content": [
+    {
+      "type": "heading",
+      "tag": "h2",
+      "text": "Personal Information",
+      "class": ""
+    },
+    {
+      "type": "paragraph",
+      "text": "Please enter your name and contact details accurately.",
+      "class": ""
+    }
+  ]
+}

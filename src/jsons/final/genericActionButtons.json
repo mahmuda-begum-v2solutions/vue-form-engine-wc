@@ -1,0 +1,42 @@
+{
+  "buttons": [
+    {
+      "type": "submit",
+      "text": "Submit",
+      "icon": "check-circle",
+      "class": "",
+      "disabled": false,
+      "loading": false,
+      "actionId": "submitForm"
+    },
+    {
+      "type": "reset",
+      "text": "Clear",
+      "icon": "rotate-ccw",
+      "class": "",
+      "actionId": "resetForm"
+    },
+    {
+      "type": "button",
+      "text": "Save Draft",
+      "icon": "save",
+      "class": "",
+      "loading": false,
+      "actionId": "saveDraft"
+    },
+    {
+      "type": "button",
+      "text": "Preview",
+      "icon": "eye",
+      "class": "",
+      "actionId": "previewForm"
+    }
+  ],
+  "link": {
+    "text": "Need help? Visit our support page",
+    "href": "https://example.com/support",
+    "class": "",
+    "icon": "help-circle",
+    "external": true
+  }
+}
