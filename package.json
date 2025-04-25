@@ -1,6 +1,6 @@
 {
   "name": "vue-form-engine-wc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "description": "Vue 3 Web Component for form engine",
   "scripts": {

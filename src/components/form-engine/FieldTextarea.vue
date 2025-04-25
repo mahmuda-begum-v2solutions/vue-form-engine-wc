@@ -58,6 +58,7 @@ const textareaValue = computed({
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+  width: -webkit-fill-available;
   /* Space between fields */
 }
 
@@ -81,6 +82,7 @@ const textareaValue = computed({
   resize: vertical;
   /* Allow vertical resizing */
   transition: all 0.3s ease;
+  width: -webkit-fill-available;
 }
 
 .field-error {

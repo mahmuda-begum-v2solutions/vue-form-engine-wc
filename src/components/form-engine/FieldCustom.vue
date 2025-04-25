@@ -86,6 +86,7 @@ const inputValue = computed({
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  width: -webkit-fill-available;
 }
 
 .field-label-help {
@@ -113,12 +114,12 @@ const inputValue = computed({
   padding: 0.75rem 1rem;
   border: 1px solid #ccc;
   border-radius: 0.375rem;
-  width: 100%;
   background-color: #fff;
   color: inherit;
   transition: all 0.3s ease;
   display: block;
   margin-bottom: 1rem;
+  width: -webkit-fill-available;
 }
 
 .field-error {

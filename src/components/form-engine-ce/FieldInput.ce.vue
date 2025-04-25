@@ -56,7 +56,7 @@ const hasError = computed(() => !!props.error)  // Determine if there is an erro
   padding: 0.75rem 1rem;
   border: 1px solid #ccc;
   border-radius: 0.375rem;
-  width: 100%;
+  width: -webkit-fill-available;
   background-color: #fff;
   color: inherit;
   transition: all 0.3s ease;
